@@ -15,7 +15,7 @@ Then you can use `dirname` or `__dirname` in your code just like any other varia
 
 ## What They Do
 
-Both `dirname` and `__dirname` are derived from the 'import.meta.url` object, which gives you the URL of the current module's file. The `fileURLToPath` function from the `url` module converts this URL to a file path, which we can then use with the `path.dirname` method to get the directory name of the current module.
+Provides the full absolute path to the directory containing the current module's file.
 
 ## Example
 
