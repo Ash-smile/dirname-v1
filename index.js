@@ -19,10 +19,12 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-
+"use strict";
 
 import { fileURLToPath } from 'url';
 import path from 'path';
 
 export const dirname = path.dirname(fileURLToPath(import.meta.url));
 export const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+///
