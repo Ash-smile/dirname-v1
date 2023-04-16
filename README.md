@@ -1,38 +1,56 @@
-# `dirname` and `__dirname` Variables in Node.js
+# dirname and __dirname
 
-This code exports two variables, `dirname` and `__dirname`, that give you the directory name of the current module's file.
+This is a simple module that exports `dirname` and `__dirname` constants for use in Node.js modules.
 
-## How to Use
+`dirname` returns the directory path of the current module, while `__dirname` returns the full file path of the module.
 
-To use these variables in your code, you can import them like this:
+## Installation
 
-```js
-import { dirname, __dirname } from 'dirname';
-```
+You can install this module using npm:
 
-Then you can use `dirname` or `__dirname` in your code just like any other variable.
-
-
-## What They Do
-
-Provides the full absolute path to the directory containing the current module's file.
-
-## Example
-
-Here is an example of how you might use `dirname` or `___dirname` to read a file relative to the current module:
-
-```js
-import { dirname } from '__dirname';
-//You can also use { __dirname }!
-import fs from 'fs';
-import path from 'path';
-
-const filePath = path.join(dirname, 'data', 'file.txt');
-const fileData = fs.readFileSync(filePath, 'utf8');
-console.log(fileData);
+```sh
+npm install dirname-v1
 ```
 
 
-In this example, we use `dirname` to construct a file path relative to the current module's directory, then use `fs.readFileSync` to read the contents of
+## Declaration
 
-the file.
+To use this module in your Node.js project, import it at the top of your module:
+
+```js
+const { dirname, __dirname } = require('dirname-v1');
+```
+
+For es6 module =>
+
+```js
+import { dirname, __dirname } from 'dirname-v1';
+```
+
+## Example Usage
+
+You can then use dirname and __dirname in your code to get the directory and file path of your module, respectively:
+
+```js
+console.log(__dirname + '/some-file.js');
+```
+
+```js
+import {readerSync} from 'fs'
+const filepath = __dirname + "/file";
+///Just an example
+readerSync(filepath)
+```
+
+## License
+
+This code is licensed under the [license] license. See the LICENSE file in the root directory of this source tree for more information.
+
+```xml
+
+In this `README.md` file, we first provide an overview of the purpose and functionality of the module. We then provide installation instructions for installing the module from npm.
+
+Next, we explain how to use the module in your Node.js project by importing the `dirname` and `__dirname` constants and using them in your code. We provide examples of how to use the constants and what they return.
+
+Finally, we include a license section where we state the license of the code and provide a link to the `LICENSE` file where the license terms are explained in more detail. You should replace the `[license]` placeholder with the name of your chosen license.
+```
