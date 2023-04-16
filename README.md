@@ -52,5 +52,5 @@ In this `README.md` file, we first provide an overview of the purpose and functi
 
 Next, we explain how to use the module in your Node.js project by importing the `dirname` and `__dirname` constants and using them in your code. We provide examples of how to use the constants and what they return.
 
-Finally, we include a license section where we state the license of the code and provide a link to the `LICENSE` file where the license terms are explained in more detail. You should replace the `[license]` placeholder with the name of your chosen license.
+Finally, we include a license section where we state the license of the code and provide a link to the `LICENSE` file where the license terms are explained in more detail.
 ```
