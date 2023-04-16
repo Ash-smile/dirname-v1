@@ -1,5 +1,5 @@
 /**
- * Copyright (c) [year], [author]
+ * Copyright (c) 2023, Ash-smile •|•
  * All rights reserved.
  *
  * This code is licensed under the [license] license found in the
